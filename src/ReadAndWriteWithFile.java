@@ -8,7 +8,7 @@ public class ReadAndWriteWithFile {
     public static String readFromFile(String path) throws IOException {
         Path pathForRead = Path.of(path);
         try {
-           return Files.readString(pathForRead, StandardCharsets.UTF_8);
+            return Files.readString(pathForRead, StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new IOException("Ошибка при чтении из файла: " + e.getMessage());
         }
